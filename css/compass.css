@@ -1,0 +1,149 @@
+.title-container{
+	font-family: 'CooolFont';
+	font-size: 56px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.compass-container{
+	width:100%;	
+	transform: scaleX(0.3) scaleY(0.3);
+}
+.compass{	
+	margin-left:auto;
+	margin-right:auto;
+}
+.needle-container{
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+}
+.needle-contain{
+	position: relative;
+	top:0;
+	height: 100px;
+	width: 100px;
+	overflow: hidden;
+}
+.needle{
+	height: 100px;
+	width: 100px;
+	background: white;
+	box-shadow: 0px 0px 5px 0px;
+}
+.dir-contain{
+	position: absolute;
+	left:150px;
+}
+.new-dir-contain{
+	font-size:48px;
+}
+
+.new-dir{
+	display: inline-block;
+	position: relative;
+}
+
+.dir{
+	font-weight: bold;
+	text-shadow: 2px 1px 6px #4d4d4d; 
+}
+
+.n-north{
+	top:0px;
+	left:65px;
+}
+.n-west{
+	top:120px;
+	left:-100px;
+}
+.n-east{
+	top:120px;
+	left:90px;
+}
+.n-south{
+	top:240px;
+	left:-75px;
+}
+.tl{
+	top:0px;
+	left:0px;
+}
+.tr{		
+	left:100px;
+	top:-100px;
+}
+.bl{
+	top:-100px;
+	left:0px;
+}
+.br{
+	top:-200px;
+	left:100px;
+}
+.tr .needle{
+	background: red;
+	transform: rotateZ(75deg);
+	transform-origin: top left;
+}
+.tl .needle{	
+	background: red;			
+	transform-origin: top right;
+	transform: rotateZ(-75deg);
+}
+.br .needle{
+	transform: rotateZ(-75deg);
+	transform-origin: bottom left;
+}
+.bl .needle{				
+	transform: rotateZ(75deg);
+	transform-origin: bottom right;
+}
+.compass-ring-container{
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	border-radius:150px; 
+	box-shadow: 0px 2px 30px 0px;
+}
+.compass-ring{
+	text-align:center;
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	border: 2px solid black;
+	border-radius:150px; 
+	background: rgba(0,0,0,0.6);
+	box-shadow: 0px 0px 15px 0px inset;
+	
+}
+.compass-top-contain{
+	width: 100%;
+	height: 20px;
+	margin-bottom: -1px;
+}
+.compass-top{
+	margin: 0 auto;
+	background: rgba(0,0,0,1);
+	box-shadow: 0px 0px 10px 0px;
+	border: 2px solid black; 
+	border-bottom: none;
+	width: 50px;
+	height: 100%;
+}
+.center-dot{
+	height: 40px;
+	width: 40px;
+	border-radius: 50px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 999;
+	top:135px;
+	left:3.5px;
+	background: rgba(255,255,0,0.9);
+	box-shadow: 0px 0px 5px 0px;
+}
+.loading-text{	
+	color: #D5AD3E;
+    margin-top: -90px;
+    text-shadow: 0px 1px 5px #D5AD3E;
+}
